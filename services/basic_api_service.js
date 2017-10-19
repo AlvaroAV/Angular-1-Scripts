@@ -19,7 +19,7 @@ angular.module('myApp')
       }),
       
       // apiService method '
-      'user': $resource(base_url + '/new/post/', {}, {
+      'other': $resource(base_url + '/other/url/', {}, {
         post: { method: 'POST', isArray: false, cache: true}
       })
     };
@@ -47,6 +47,11 @@ angular.module('myApp')
           console.log("USER DELETED");
           console.log(result);
       });
+  
+      // Call api service different method
+      apiservice.other.post().$promise.then(function(result){
+          console.log("Accessed '/other/url/' !");
+      });  
   
     });
     
