@@ -28,4 +28,4 @@ angular.module('myApp')
   
   var result = myService.pow(2, 3);  // Result will contain '8'
   
-  }
+}
