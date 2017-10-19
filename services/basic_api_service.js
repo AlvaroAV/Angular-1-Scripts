@@ -18,7 +18,7 @@ angular.module('myApp')
         update: { method: 'PUT', isArray: false, cache: true, },  // Update existing user
       }),
       
-      // apiService method '
+      // Different service method
       'other': $resource(base_url + '/other/url/', {}, {
         post: { method: 'POST', isArray: false, cache: true}
       })
